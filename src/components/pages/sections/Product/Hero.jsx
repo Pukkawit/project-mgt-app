@@ -13,13 +13,18 @@ const Hero = () => {
         <h2 className="text-[40px] font-urbanist text-darkColors-lightestGrey font-bold text-center leading-10">
           Plan, Collaborate And Execute
         </h2>
-        <p className="bigBodyTextR text-darkColors-lightestGrey text-center mb-[163px] mt-[17px]">
+        <p className="bigBodyTextR text-darkColors-lightestGrey text-center mb-[103px] mt-[17px]">
           Plan with clear goals and resources. Then, collaborate effectively
           with teams to ensure smooth communication. Finally, execute tasks
           efficiently to achieve key milestones and project outcomes, this
           fosters teamwork and ensures project goals are met..
         </p>
-        <Button text="Login" />
+        <Button
+          text="Get Started"
+          bg="primary"
+          hoverBg="primaryShade2"
+          fontFamily="urbanist"
+        />
       </div>
     </div>
   );
