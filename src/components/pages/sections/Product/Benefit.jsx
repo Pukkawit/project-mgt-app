@@ -6,7 +6,7 @@ import featuredGuy from "../../../../../public/assets/images/benefit-smiling-guy
 
 const Benefit = () => {
   return (
-    <div className="max-container mx-auto my-14 pb-16 h-auto sm:h-[565px] flex flex-col sm:flex-row gap-y-32 sm:gap-x-32 items-center section">
+    <div className="max-container mx-auto my-14 pb-16 h-[1000px] sm:h-[565px] flex flex-col sm:flex-row gap-y-20 sm:gap-x-32 items-center section">
       <div className="min-w-96 max-w-[650px] text-center sm:text-left w-full sm:w-auto">
         <h2 className="heading2 text-darkColors-grey mb-5">
           Key Benefit of Taskly
@@ -32,7 +32,7 @@ const Benefit = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="w-[500px] h-[500px] bg-primary rounded-full"></div>
+        <div className="w-[350px] h-[350px] sm:w-[500px] sm:h-[500px] bg-primary rounded-full"></div>
         <LazyLoadImage
           src={featuredGuy}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-48"
