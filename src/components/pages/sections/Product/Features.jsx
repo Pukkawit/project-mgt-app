@@ -9,7 +9,7 @@ const Features = () => {
       </h2>
       <div className="flex items-center justify-between gap-x-14">
         {features.map((feature, index) => (
-          <div key={index} className="flex justify-center gap-4">
+          <div key={index} className="flex justify-start gap-4">
             <Card
               image={feature.img}
               title={feature.title}
