@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import closeEye from "../../assets/icons/close-eye.png";
+import closeEye from "../../../public/assets/icons/close-eye.png";
+import openEye from "../../../public/assets/icons/open-eye.png";
 
 const PasswordInputField = ({ label, name, id, htmlFor }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -31,7 +32,7 @@ const PasswordInputField = ({ label, name, id, htmlFor }) => {
           name={name}
           value={value}
           onChange={handleInputChange}
-          className="inputField smallBodyTextM font-urbanist"
+          className="inputField smallBodyTextM font-urbanist "
           style={{ opacity: isPasswordVisible ? 1 : 0 }}
         />
 
@@ -57,10 +58,10 @@ const PasswordInputField = ({ label, name, id, htmlFor }) => {
           onClick={togglePasswordVisibility}
           className="absolute cursor-pointer right-3 top-1/2 transform -translate-y-1/2"
         >
-          {isPasswordVisible ? (
+          {!isPasswordVisible ? (
             <img src={closeEye} alt="Hide Password" />
           ) : (
-            "Show Password"
+            <img src={openEye} alt="Hide Password" />
           )}
         </div>
       </div>

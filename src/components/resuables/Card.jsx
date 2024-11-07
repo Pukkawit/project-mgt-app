@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Card = ({ title, description, image }) => {
   return (
-    <div className="flex flex-col items-center px-11  h-[526px] w-[388px] shadow-card-shadow text-text-color rounded-[20px] hover:bg-primaryShade2  transition-colors delay-150 group">
+    <div className="flex flex-col items-center px-11  h-[526px] w-[388px]  shadow-card-shadow text-text-color rounded-[20px] hover:bg-primaryShade2  transition-colors delay-150 group">
       <img
         className="object-contain mb-11 w-[300px] h-[300px]"
         src={image}

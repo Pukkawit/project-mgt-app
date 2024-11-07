@@ -2,14 +2,14 @@ import { partners } from "../../../../../public/constants/partners";
 
 const Partners = () => {
   return (
-    <div>
-      <h2 className="heading2 text-darkColors-grey text-center">
+    <div className="max-container section">
+      <h2 className="heading2 text-darkColors-grey text-center mb-9">
         Trusted by teams at
       </h2>
-      <div className="flex flex-wrap justify-center gap-x-20">
+      <div className="grid grid-cols-2  sm:flex sm:flex-row  justify-items-center gap-y-10 sm:gap-x-20 sm:justify-center">
         {partners.map((partner, index) => (
-          <div key={index} className="flex items-center gap-x-20 h-28">
-            <img src={partner.img} alt={partner.name} className="" />
+          <div key={index} className=" ">
+            <img src={partner.img} alt={partner.name} className="w-20" />
           </div>
         ))}
       </div>
