@@ -1,5 +1,8 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
+import googlePlay from "../../../../../public/assets/images/googleplay.png";
+import appstore from "../../../../../public/assets/images/appstore.png";
+import featuredGuy from "../../../../../public/assets/images/benefit-smiling-guy.png";
 
 const Benefit = () => {
   return (
@@ -21,25 +24,17 @@ const Benefit = () => {
         </p>
         <div className="flex gap-2">
           <Link to="#">
-            <img
-              src="../../src/assets/images/googleplay.png"
-              alt="googleplay"
-              className="w-52"
-            />
+            <img src={googlePlay} alt="googleplay" className="w-52" />
           </Link>
           <Link to="#">
-            <img
-              src="../../src/assets/images/appstore.png"
-              alt="googleplay"
-              className="w-52"
-            />
+            <img src={appstore} alt="googleplay" className="w-52" />
           </Link>
         </div>
       </div>
       <div className="relative">
         <div className="w-[500px] h-[500px] bg-primary rounded-full"></div>
         <LazyLoadImage
-          src="../../src/assets/images/benefit-smiling-guy.png"
+          src={featuredGuy}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-48"
         />
       </div>

@@ -1,6 +1,6 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "../../../resuables/Button";
-import HeroImage from "../../../../assets/images/hero-img.jpg";
+import HeroImage from "../../../../../public/assets/images/hero-img.jpg";
 
 const Hero = () => {
   return (
