@@ -1,4 +1,4 @@
-import { partners } from "../../../constants/partners";
+import { partners } from "../../../../../public/constants/partners";
 
 const Partners = () => {
   return (

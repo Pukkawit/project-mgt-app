@@ -1,5 +1,5 @@
 import Card from "../../../resuables/Card";
-import { resources } from "../../../constants/resources";
+import { resources } from "../../../../../public/constants/resources";
 import { Link } from "react-router-dom";
 import RightArrow from "../../../../../public/assets/icons/right-arrow.png";
 

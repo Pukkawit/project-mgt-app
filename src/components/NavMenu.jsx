@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { navMenuItems } from "./constants/navMenuItems";
+import { navMenuItems } from "../../public/constants/navMenuItems";
 
 const NavMenu = () => {
   return (
