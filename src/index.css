@@ -30,6 +30,9 @@ body {
   .section {
     @apply px-[80px];
   }
+  .mobile-section {
+    @apply px-5 w-full flex flex-col justify-center;
+  }
 
   .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;

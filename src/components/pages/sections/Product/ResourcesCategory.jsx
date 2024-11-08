@@ -5,7 +5,7 @@ import RightArrow from "../../../../../public/assets/icons/right-arrow.png";
 
 const ResourcesCategory = () => {
   return (
-    <div className="max-container section flex items-start flex-col pb-[60px] ">
+    <div className="mobile-section sm:max-container sm:section flex items-start flex-col pb-[60px] ">
       <div className="flex items-center w-full justify-between mb-8">
         <h2 className="text-darkColors-grey heading3">Resource Categories</h2>
         <Link to="#">
@@ -17,7 +17,7 @@ const ResourcesCategory = () => {
           </p>
         </Link>
       </div>
-      <div className="w-full flex-col sm:flex-row flex items-start justify-items-start gap-x-[50px]">
+      <div className="flex-col sm:flex-row flex items-start justify-items-start gap-[50px]">
         {resources.map((resource, index) => (
           <div key={index} className="">
             <Card

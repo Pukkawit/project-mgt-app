@@ -9,7 +9,7 @@ const Hero = () => {
         src={HeroImage}
         className="w-full h-full brightness-[0.35] object-cover"
       />
-      <div className="max-w-[724px] absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white flex flex-col items-center">
+      <div className="w-full px-5 sm:max-w-[724px] absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 text-white flex flex-col items-center">
         <h2 className="text-[40px] font-urbanist text-darkColors-lightestGrey font-bold text-center leading-10">
           Plan, Collaborate And Execute
         </h2>

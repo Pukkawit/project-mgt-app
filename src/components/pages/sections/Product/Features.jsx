@@ -3,7 +3,7 @@ import { features } from "../../../../../public/constants/features";
 
 const Features = () => {
   return (
-    <div className="max-container section  mt-14  pb-[60px]">
+    <div className="mobile-section sm:max-container sm:section  mt-14  pb-[60px]">
       <h2 className="w-96 text-center heading2 mx-auto  text-darkColors-grey mb-[50px] ">
         Your Best Product Management Platform
       </h2>
