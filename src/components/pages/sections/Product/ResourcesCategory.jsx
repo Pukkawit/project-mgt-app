@@ -17,7 +17,7 @@ const ResourcesCategory = () => {
           </p>
         </Link>
       </div>
-      <div className="flex-col sm:flex-row flex items-start justify-items-start gap-[50px]">
+      <div className="flex-col sm:flex-row flex items-start justify-items-start gap-x-[50px]">
         {resources.map((resource, index) => (
           <div key={index} className="">
             <Card

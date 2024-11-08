@@ -3,7 +3,7 @@ import Button from "./resuables/Button";
 
 const Nav = () => {
   return (
-    <div className="h-[60px] mb-[56px] flex items-center justify-between">
+    <div className="h-[60px]  flex items-center justify-between">
       <Link to="#">
         <h1 className="text-2xl font-bold font-unlock text-primary ">Tasky</h1>
       </Link>

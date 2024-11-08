@@ -6,7 +6,7 @@ import featuredGuy from "../../../../../public/assets/images/benefit-smiling-guy
 
 const Benefit = () => {
   return (
-    <div className="max-container mx-auto my-14 pb-16 h-[1000px] sm:h-[565px] flex flex-col sm:flex-row gap-y-20 sm:gap-x-32 items-center section">
+    <div className="max-container mx-auto my-14 pb-16 h-[1050px] sm:h-[565px] flex flex-col sm:flex-row gap-y-20 sm:gap-x-32 items-center section">
       <div className="min-w-96 max-w-[650px] text-center sm:text-left w-full px-5 sm:w-auto">
         <h2 className="heading2 text-darkColors-grey mb-5">
           Key Benefit of Taskly
