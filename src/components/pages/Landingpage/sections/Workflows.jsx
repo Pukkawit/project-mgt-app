@@ -7,9 +7,9 @@ const Workflows = () => {
       <h2 className="heading2 text-darkColors-grey mb-[30px] text-center sm:text-left">
         Workflows for all projects
       </h2>
-      <div className="flex flex-col mobile-section sm:flex-row sm:justify-start gap-x-[28px]">
+      <div className="flex flex-col mobile-section sm:flex-row sm:justify-start gap-x-[28px] sm:p-0">
         {workflows.map((workflow, index) => (
-          <div key={index}>
+          <div key={index} className="sm:justify-start">
             <WorkflowsCard title={workflow.title} content={workflow.content} />
           </div>
         ))}

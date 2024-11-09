@@ -24,7 +24,7 @@ const PasswordInputField = ({ label, name, id, htmlFor }) => {
       >
         {label}
       </label>
-      <div className="relative h-[60px] w-[499px]">
+      <div className="relative h-[60px] w-[499px] mb-6">
         {/* Hidden Input Field */}
         <input
           type="text"
@@ -32,7 +32,7 @@ const PasswordInputField = ({ label, name, id, htmlFor }) => {
           name={name}
           value={value}
           onChange={handleInputChange}
-          className="inputField smallBodyTextM font-urbanist "
+          className="inputField smallBodyTextM font-urbanist"
           style={{ opacity: isPasswordVisible ? 1 : 0 }}
         />
 

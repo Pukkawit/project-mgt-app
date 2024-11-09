@@ -76,6 +76,7 @@ export default {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         urbanist: ["Urbanist", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
       },
       colors: {
         primary: "#00008B",

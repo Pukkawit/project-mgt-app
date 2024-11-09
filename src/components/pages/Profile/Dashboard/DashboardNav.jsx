@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { navMenuItems } from "../../public/constants/navMenuItems";
+import { dashboardMenuITems } from "../../../../../public/constants/dashboardMenuITems";
 
-const NavMenu = () => {
+const DashboardNav = () => {
   return (
     <div className="flex gap-x-20">
-      {navMenuItems.map((item, index) => (
+      {dashboardMenuITems.map((item, index) => (
         <NavLink
           key={index}
           to={item.path}
@@ -21,4 +21,4 @@ const NavMenu = () => {
   );
 };
 
-export default NavMenu;
+export default DashboardNav;
