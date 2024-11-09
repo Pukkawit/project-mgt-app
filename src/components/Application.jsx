@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LandingPage from "./pages/Landingpage/LandingPage";
-import Header from "./Header";
+import Header from "./AppHeader";
 import Footer from "./Footer";
 import Dashboard from "./pages/Profile/Dashboard";
 

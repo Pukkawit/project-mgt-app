@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Button from "./resuables/Button";
 
-const Header = () => {
+const AppHeader = () => {
   const navigate = useNavigate();
 
   const handleHomeNavigate = () => {
@@ -40,4 +40,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppHeader;
