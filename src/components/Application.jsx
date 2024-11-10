@@ -2,10 +2,10 @@ import { useState } from "react";
 import LandingPage from "./pages/Landingpage/LandingPage";
 import Header from "./AppHeader";
 import Footer from "./Footer";
-import Dashboard from "./pages/Profile/Dashboard";
+import Profile from "./pages/Profile/Profile";
 
 const Application = () => {
-  const [isLogin /* setIsLogin */] = useState(false);
+  const [isLogin /* setIsLogin */] = useState(true);
   return (
     <div className="max-container">
       {!isLogin ? (
@@ -15,7 +15,7 @@ const Application = () => {
           <Footer />
         </>
       ) : (
-        <Dashboard />
+        <Profile />
       )}
     </div>
   );

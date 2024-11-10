@@ -1,13 +1,18 @@
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import "./index.css";
 import App from "./App";
 import Dashboard from "./components/pages/Profile/Dashboard";
-import Timelines from "./components/pages/Profile/Timelines/Timelines";
+import Inbox from "./components/pages/Profile/Inbox/Inbox";
 import Tasks from "./components/pages/Profile/Tasks/Tasks";
-import Teams from "./components/pages/Profile/Teams/Teams";
-import Reports from "./components/pages/Profile/Reports/Reports";
+import Analyse from "./components/pages/Profile/Analyse/Analyse";
+import Settings from "./components/pages/Profile/Settings/Settings";
+import Members from "./components/pages/Profile/Members/Members";
 import Overview from "./components/pages/Profile/Dashboard/pages/Overview";
 import Board from "./components/pages/Profile/Dashboard/pages/Board";
 import List from "./components/pages/Profile/Dashboard/pages/List";
@@ -23,6 +28,7 @@ import Onboarding1 from "./components/pages/Onboarding1";
 import Onboarding2 from "./components/pages/Onboarding2";
 import Onboarding3 from "./components/pages/Onboarding3";
 import QuickVideoPage from "./components/pages/QuickVideoPage";
+import Profile from "./components/pages/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -35,55 +41,75 @@ const router = createBrowserRouter([
         element: <Application />,
       },
       {
-        path: "/dashboard",
-        element: <Dashboard />,
+        path: "/profile",
+        element: <Profile />,
 
         children: [
+          // Redirect from /profile to /profile/dashboard
           {
-            path: "/dashboard/overview",
-            element: <Overview />,
+            index: true,
+            element: <Navigate to="/profile/dashboard" replace />,
           },
           {
-            path: "/dashboard/board",
-            element: <Board />,
+            path: "/profile/dashboard",
+            element: <Dashboard />,
+
+            children: [
+              {
+                index: true,
+                element: <Navigate to="/profile/dashboard/overview" replace />,
+              },
+              {
+                path: "/profile/dashboard/overview",
+                element: <Overview />,
+              },
+              {
+                path: "/profile/dashboard/board",
+                element: <Board />,
+              },
+              {
+                path: "/profile/dashboard/list",
+                element: <List />,
+              },
+              {
+                path: "/profile/dashboard/timeline",
+                element: <Timeline />,
+              },
+              {
+                path: "/profile/dashboard/calender",
+                element: <Calender />,
+              },
+              {
+                path: "/profile/dashboard/workflow",
+                element: <Workflow />,
+              },
+              {
+                path: "/profile/dashboard/files",
+                element: <Files />,
+              },
+            ],
           },
           {
-            path: "/dashboard/list",
-            element: <List />,
+            path: "/profile/tasks",
+            element: <Tasks />,
           },
           {
-            path: "/dashboard/timeline",
-            element: <Timeline />,
+            path: "/profile/inbox",
+            element: <Inbox />,
           },
           {
-            path: "/dashboard/calender",
-            element: <Calender />,
+            path: "/profile/analyse",
+            element: <Analyse />,
           },
           {
-            path: "/dashboard/workflow",
-            element: <Workflow />,
+            path: "/profile/members",
+            element: <Members />,
           },
           {
-            path: "/dashboard/files",
-            element: <Files />,
+            path: "/profile/settings",
+            element: <Settings />,
           },
         ],
-      },
-      {
-        path: "/timelines",
-        element: <Timelines />,
-      },
-      {
-        path: "/tasks",
-        element: <Tasks />,
-      },
-      {
-        path: "/teams",
-        element: <Teams />,
-      },
-      {
-        path: "/reports",
-        element: <Reports />,
       },
       {
         path: "/signup",
