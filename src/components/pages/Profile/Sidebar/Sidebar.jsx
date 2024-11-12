@@ -6,7 +6,7 @@ import dotsMore from "../../../../../public/assets/icons/dashboard/dots-more.png
 
 const Sidebar = () => {
   return (
-    <aside className="flex flex-col absolute top-0 left-0 min-h-screen w-[291px] border rounded-[10px] border-dashboardLightGray overflow-y-auto">
+    <aside className="flex flex-col fixed top-0 left-0 h-full min-h-screen w-[291px] border rounded-[10px] border-dashboardLightGray overflow-y-auto">
       <header className="h-20 flex items-center p-4">
         <div className="logo">
           <SiteLogo stroke="#0177FB" fill="#0177FB" />

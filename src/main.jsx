@@ -9,7 +9,7 @@ import "./index.css";
 import App from "./App";
 import Dashboard from "./components/pages/Profile/Dashboard";
 import Inbox from "./components/pages/Profile/Inbox/Inbox";
-import Tasks from "./components/pages/Profile/Tasks/Tasks";
+import MyTasks from "./components/pages/Profile/Tasks/MyTasks";
 import Analyse from "./components/pages/Profile/Analyse/Analyse";
 import Settings from "./components/pages/Profile/Settings/Settings";
 import Members from "./components/pages/Profile/Members/Members";
@@ -91,7 +91,7 @@ const router = createBrowserRouter([
           },
           {
             path: "/profile/tasks",
-            element: <Tasks />,
+            element: <MyTasks />,
           },
           {
             path: "/profile/inbox",

@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import Profile from "./pages/Profile/Profile";
 
 const Application = () => {
-  const [isLogin /* setIsLogin */] = useState(true);
+  const [isLogin /* setIsLogin */] = useState(false);
   return (
     <div className="max-container">
       {!isLogin ? (

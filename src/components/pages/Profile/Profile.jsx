@@ -10,7 +10,7 @@ const Profile = ({ isSidebarOpen }) => {
     setSideBarOpen(!sideBarOpen);
   }; */
   return (
-    <div className="relative max-container h-screen">
+    <div className="relative max-container mx-auto">
       <Sidebar />
       <main
         className={`relative ${

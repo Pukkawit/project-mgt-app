@@ -3,8 +3,13 @@ import CloseIcon from "../../../public/assets/icons/CloseIcon";
 import InputField from "../resuables/InputField";
 import Button from "../resuables/Button";
 import GoogleIcon from "../../../public/assets/icons/google_icon.png";
+import { useNavigate } from "react-router-dom";
 const SignUpPage = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
+  const home = () => {
+    navigate("/");
+  };
   return (
     <div className="max-container  section h-auto w-full flex flex-col items-center justify-center relative">
       <div className="max-w-[500px] mt-[160px] flex flex-col items-center ">
@@ -12,6 +17,7 @@ const SignUpPage = () => {
           className="absolute top-[60px] right-0 cursor-pointer"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          onClick={home}
         >
           <CloseIcon isHovered={isHovered} />
         </div>
@@ -35,6 +41,7 @@ const SignUpPage = () => {
           hoverBg="primaryShade2"
         />
         <Button
+          img={true}
           width={"full"}
           bg={"transparent"}
           text="Sign Up with Google"

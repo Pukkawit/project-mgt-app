@@ -114,6 +114,7 @@ export default {
     },
   },
   plugins: [
+    require("tailwind-scrollbar"),
     plugin(function ({ addComponents, theme }) {
       addComponents({
         ".heading1": {

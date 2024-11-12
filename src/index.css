@@ -18,7 +18,19 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
+}
+
+/* For WebKit-based browsers (e.g., Chrome, Safari) */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 4px;
 }
 
 @layer components {
