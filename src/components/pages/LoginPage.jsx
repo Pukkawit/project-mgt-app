@@ -1,8 +1,14 @@
 import InputField from "../resuables/InputField";
 import PasswordInputField from "../resuables/PasswordInputField";
 import Button from "../resuables/Button";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const Navigate = useNavigate();
+
+  const handleSignUp = () => {
+    Navigate("/signup");
+  };
   return (
     <div className="max-container section h-[100vh] w-full flex flex-col items-center justify-center relative">
       <div className="mb-[54px]">
@@ -15,16 +21,22 @@ const LoginPage = () => {
         <InputField label="Email Address" />
         <PasswordInputField label="Password" />
         <Button
-          width={"full"}
-          bg={"primary"}
+          width={"100%"}
+          bg={"var(--primary)"}
           text="Login"
           color={"white"}
           fontFamily={"urbanist"}
-          hoverBg={"primaryShade2"}
+          hoverBg={"var(--primaryShade2)"}
         />
       </form>
       <p className="bigBodyTextM text-darkColors-grey">
-        Don’t have an account? <span onClick={""}>Sign Up</span>
+        Don’t have an account?{" "}
+        <span
+          className="hover:text-primaryShade2 text-primary cursor-pointer"
+          onClick={handleSignUp}
+        >
+          Sign Up
+        </span>
       </p>
     </div>
   );

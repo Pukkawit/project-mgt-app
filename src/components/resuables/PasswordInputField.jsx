@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import closeEye from "../../../public/assets/icons/close-eye.png";
 import openEye from "../../../public/assets/icons/open-eye.png";
 
-const PasswordInputField = ({ label, name, id, htmlFor }) => {
+const PasswordInputField = ({ label, name, id, htmlFor, width }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [value, setValue] = useState("");
 
@@ -24,7 +24,10 @@ const PasswordInputField = ({ label, name, id, htmlFor }) => {
       >
         {label}
       </label>
-      <div className="relative h-[60px] w-[499px] mb-6">
+      <div
+        className="relative h-[60px] w-[499px] mb-6"
+        style={{ width: width }}
+      >
         {/* Hidden Input Field */}
         <input
           type="text"
@@ -32,14 +35,14 @@ const PasswordInputField = ({ label, name, id, htmlFor }) => {
           name={name}
           value={value}
           onChange={handleInputChange}
-          className="inputField smallBodyTextM font-urbanist"
+          className="inputField smallBodyTextM font-urbanist w-full"
           style={{ opacity: isPasswordVisible ? 1 : 0 }}
         />
 
         {/* Masking Layer */}
         {!isPasswordVisible && (
           <div
-            className="inputField absolute inset-0 pointer-events-none"
+            className="inputField absolute w-full inset-0 pointer-events-none"
             style={{
               fontSize: "22px",
               letterSpacing: "-1px",
@@ -47,6 +50,7 @@ const PasswordInputField = ({ label, name, id, htmlFor }) => {
               display: "flex",
               alignItems: "center",
               paddingLeft: "10px",
+              width: "100%",
             }}
           >
             {"●".repeat(value.length)}
@@ -75,6 +79,7 @@ PasswordInputField.propTypes = {
   htmlFor: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
 };
 
 export default PasswordInputField;

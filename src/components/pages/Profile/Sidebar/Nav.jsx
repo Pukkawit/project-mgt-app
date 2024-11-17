@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { dashboardSideMenuitems } from "../../../../../public/constants/dashboardSideMenuItems";
+import { sideBarMenuitems } from "../../../../../public/constants/profileMenuItems";
 import addIcon from "../../../../../public/assets/icons/dashboard/sidebarIcons.svg";
 
 const Nav = () => {
   return (
     <nav className="flex flex-col">
-      {dashboardSideMenuitems.map((item, index) => (
-        <NavLink key={index} to={item.to} className="cursor-pointer">
+      {sideBarMenuitems.map((item, index) => (
+        <NavLink key={index} to={item.path} className="cursor-pointer">
           {({ isActive }) => (
             <div
               className={`flex items-center gap-x-3 px-6 min-h-12 transition-colors duration-300 ease-in-out group hover:bg-primaryShade4 hover:border-l-[3px] hover:border-dashboardBlue ${
@@ -20,7 +20,7 @@ const Nav = () => {
               </svg>
               <div className="w-full flex justify-between items-center">
                 <p className="mediumBodyTextM group-hover:text-dashboardBlue">
-                  {item.title}
+                  {item.label}
                 </p>
                 {item.inbox && (
                   <div

@@ -1,0 +1,45 @@
+{
+  "january": {
+    "title": "January",
+    "weeklyTaskData": [
+      {
+        "week": "Week 1",
+        "days": [
+          { "day": "Mon", "done": 50, "target": 70 },
+          { "day": "Tue", "done": 60, "target": 80 },
+          { "day": "Wed", "done": 45, "target": 60 }
+        ]
+      }
+    ],
+    "monthlySummary": {
+      "totalTasksDone": 350,
+      "totalTasksTarget": 400
+    },
+    "generalInfo": {
+      "projectName": "Task Tracker",
+      "lastUpdated": "2024-11-17",
+      "developer": "Witty Umosung"
+    }
+  },
+  "april": {
+    "title": "April",
+    "weeklyTaskData": [
+      {
+        "week": "Week 2",
+        "days": [
+          { "day": "Mon", "done": 60, "target": 80 },
+          { "day": "Tue", "done": 40, "target": 40 }
+        ]
+      }
+    ],
+    "monthlySummary": {
+      "totalTasksDone": 400,
+      "totalTasksTarget": 500
+    },
+    "generalInfo": {
+      "projectName": "Task Tracker",
+      "lastUpdated": "2024-11-17",
+      "developer": "Witty Umosung"
+    }
+  }
+}

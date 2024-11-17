@@ -22,17 +22,17 @@ const AppHeader = () => {
       <div className="flex gap-x-3">
         <Button
           text="Contact Sales"
-          color={"darkColors-grey"}
-          bg={"primaryShade5"}
+          color={"var(--darkColors-grey)"}
+          bg={"var(--primaryShade5)"}
           border={"border"}
           borderColor={"primaryShade5"}
         />
-        <Button color={"darkColors-grey"} text="Login" />
+        <Button color={"var(--darkColors-grey)"} text="Login" />
         <Button
           text="Sign Up"
           color={"white"}
-          bg={"primary"}
-          hoverBg={"primaryShade2"}
+          bg={"var(--primary)"}
+          hoverBg={"var(--primaryShade2)"}
           onClick={handleSignUp}
         />
       </div>

@@ -3,7 +3,7 @@ import WorkflowsCard from "../../../resuables/WorkflowsCard";
 
 const Workflows = () => {
   return (
-    <div className="mobile-section sm:max-container sm:section">
+    <div className="section">
       <h2 className="heading2 text-darkColors-grey mb-[30px] text-center sm:text-left">
         Workflows for all projects
       </h2>

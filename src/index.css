@@ -4,6 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #00008b;
+  --primaryShade1: #2a2a9e;
+  --primaryShade2: #5555b2;
+  --primaryShade3: #8080c5;
+  --primaryShade4: #f3f9fe;
+  --primaryShade5: #cccce8;
+  --dashboardBlue: #0177fb;
+  --dashboardLightGray: #eaebf0;
+  --dashboardDarkBlue: #272d37;
+
+  --darkColors-brown: #311412;
+  --darkColors-black: #0a0404;
+  --darkColors-grey: #5c5858;
+  --darkColors-gray: #5f6d7e;
+  --darkColors-lightGrey: #848181;
+  --darkColors-lighterGrey: #cecdcd;
+  --darkColors-lightestGrey: #f5f5f5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,19 +38,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: auto;
+  /* position: relative; */
 }
 
-/* For WebKit-based browsers (e.g., Chrome, Safari) */
-.scrollbar-custom::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-.scrollbar-custom::-webkit-scrollbar-track {
-  background: #e5e7eb;
-}
-.scrollbar-custom::-webkit-scrollbar-thumb {
-  background-color: #4b5563;
-  border-radius: 4px;
+ul.recharts-default-legend,
+.recharts-legend-item,
+.recharts-legend-wrapper {
+  min-width: max-content;
 }
 
 @layer components {
@@ -40,7 +55,7 @@ body {
     overflow: hidden;
   }
   .section {
-    @apply px-[80px];
+    @apply-- px-[80px];
   }
   .mobile-section {
     @apply px-5 w-full;
@@ -50,7 +65,7 @@ body {
   }
 
   .inputField {
-    @apply text-darkColors-grey h-[60px] w-[499px] mb-6 border-darkColors-grey border-[0.8px] outline-none p-[10px] font-urbanist rounded-[5px] /* sm:w-full sm:max-w-md */;
+    @apply text-darkColors-grey h-[60px] max-w-full mb-6 border-darkColors-grey border-[0.8px] outline-none p-[10px] font-urbanist rounded-[5px] /* sm:w-full sm:max-w-md */;
   }
   .padding-x {
     @apply sm:px-16 px-8;

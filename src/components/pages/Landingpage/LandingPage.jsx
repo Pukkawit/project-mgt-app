@@ -6,7 +6,7 @@ import Partners from "../Landingpage/sections/Partners";
 import Workflows from "../Landingpage/sections/Workflows";
 const LandingPage = () => {
   return (
-    <div className="max-container">
+    <div className="container max-container section mx-auto ">
       <Hero />
       <Benefit />
       <Partners />

@@ -21,8 +21,8 @@ const Hero = () => {
         </p>
         <Button
           text="Get Started"
-          bg="primary"
-          hoverBg="primaryShade2"
+          bg="var(--primary)"
+          hoverBg="var(--primaryShade2)"
           fontFamily="urbanist"
         />
       </div>

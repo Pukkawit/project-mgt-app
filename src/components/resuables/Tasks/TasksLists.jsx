@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const TasksLists = ({ title, borderColor, tasks }) => {
   return (
-    <div className="w-64 flex flex-col">
+    <div className="w-64 flex flex-col ">
       <div className="flex items-center justify-between pb-4">
         <div className="flex items-center gap-[14px]">
           <h2 className="text-[#1E293B] font-bold text-sm tracking-[1px] ">

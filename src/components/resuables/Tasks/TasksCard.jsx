@@ -1,10 +1,10 @@
-import { useState } from "react";
+/* import { useState } from "react"; */
 import taskIcons from "../../../../public/assets/icons/dashboard/tasksIcons.svg";
 import { textsColors } from "../../../../public/constants/textDynamicColors";
 import PropTypes, { object } from "prop-types";
 
 const TasksCard = ({ tasks }) => {
-  const [isGrabbing, setIsGrabbing] = useState(false);
+  /* const [isGrabbing, setIsGrabbing] = useState(false); */
 
   /*   const text = "UX Writing";*/
 
@@ -53,7 +53,7 @@ const TasksCard = ({ tasks }) => {
     });
   };
 
-  const handleMouseDown = () => {
+  /* const handleMouseDown = () => {
     setIsGrabbing(true);
   };
 
@@ -63,7 +63,9 @@ const TasksCard = ({ tasks }) => {
 
   const handleMouseLeave = () => {
     setIsGrabbing(false);
-  };
+  }; */
+
+  /* ${ isGrabbing ? "rotate-12 shadow-xl cursor-grabbing" : "cursor-grab} */
 
   return (
     <div className="flex relative flex-col gap-6 ">
@@ -71,12 +73,11 @@ const TasksCard = ({ tasks }) => {
         tasks.map((taskDetail, index) => (
           <div
             key={index}
-            className={`w-[250px]  border rounded-lg bg-white border-[#E2E8F0] transition-transform duration-300 ${
-              isGrabbing ? "rotate-12 shadow-xl cursor-grabbing" : "cursor-grab"
-            }`}
-            onMouseDown={handleMouseDown}
+            className={`w-[250px]  border rounded-lg bg-white border-[#E2E8F0] transition-transform duration-300 "
+            `}
+            /* onMouseDown={handleMouseDown}
             onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseLeave}
+            onMouseLeave={handleMouseLeave} */
           >
             <div className="p-4">
               <div className="mb-4">

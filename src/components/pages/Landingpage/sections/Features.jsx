@@ -3,11 +3,11 @@ import { features } from "../../../../../public/constants/features";
 
 const Features = () => {
   return (
-    <div className="mobile-section sm:max-container sm:section  mt-14  pb-[60px]">
+    <div className="section  mt-14  pb-[60px]">
       <h2 className="w-96 text-center heading2 mx-auto  text-darkColors-grey mb-[50px] ">
         Your Best Product Management Platform
       </h2>
-      <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-8 md:gap-14">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 md:gap-14">
         {features.map((feature, index) => (
           <div key={index} className="w-full sm:w-auto">
             <Card

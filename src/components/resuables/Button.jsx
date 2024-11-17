@@ -14,25 +14,40 @@ const Button = ({
   imgSrc,
   imgAlt,
   img,
-  /* px = "[26px]",
-  py = "[18px]", */
+  type,
 }) => {
   return (
     <button
-      className={`mb-6 px-[26px] py-[18px]  bg-${bg} text-${color} mediumBodyTextM ${border} border-${borderColor} font-${fontFamily}  rounded-md w-${width}  transition-colors ease-in-out delay-150 hover:bg-${hoverBg} hover:text-${hoverText}`}
+      type={type}
+      className={`mb-6 px-[26px] py-[18px] font-medium rounded-md transition-colors ease-in-out delay-150 ${
+        border ? `border ${border}` : ""
+      }`}
       onClick={onClick}
+      style={{
+        backgroundColor: bg || "transparent",
+        color: color || "inherit",
+        width: width,
+        borderColor: borderColor,
+        fontFamily: fontFamily,
+      }}
+      onMouseEnter={(e) => {
+        if (hoverBg) e.target.style.backgroundColor = hoverBg;
+        if (hoverText) e.target.style.color = hoverText;
+      }}
+      onMouseLeave={(e) => {
+        if (bg) e.target.style.backgroundColor = bg;
+        if (color) e.target.style.color = color;
+      }}
     >
       <div className="flex w-full items-center justify-center gap-[10px]">
         {img && <img src={imgSrc} alt={imgAlt} />}
-
         {text}
       </div>
     </button>
   );
 };
 
-// props validation
-
+// PropTypes validation
 Button.propTypes = {
   text: PropTypes.string.isRequired,
   width: PropTypes.string,
@@ -47,8 +62,7 @@ Button.propTypes = {
   img: PropTypes.bool,
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
-  px: PropTypes.string,
-  py: PropTypes.string,
+  type: PropTypes.string.isRequired,
 };
 
 export default Button;

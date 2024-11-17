@@ -29,6 +29,10 @@ import Onboarding2 from "./components/pages/Onboarding2";
 import Onboarding3 from "./components/pages/Onboarding3";
 import QuickVideoPage from "./components/pages/QuickVideoPage";
 import Profile from "./components/pages/Profile/Profile";
+import NewProject from "./components/pages/Profile/Tasks/NewProject";
+import Tasks from "./components/pages/Profile/Tasks/Tasks";
+import AssignTask from "./components/pages/Profile/Tasks/AssignTask";
+import TaskProgressChart from "./components/pages/Profile/Tasks/TaskProgressChart";
 
 const router = createBrowserRouter([
   {
@@ -91,7 +95,29 @@ const router = createBrowserRouter([
           },
           {
             path: "/profile/tasks",
-            element: <MyTasks />,
+            element: <Tasks />,
+            children: [
+              {
+                index: true,
+                element: <Navigate to="/profile/tasks/task-progress" replace />,
+              },
+              {
+                path: "/profile/tasks/task-progress",
+                element: <TaskProgressChart />,
+              },
+              {
+                path: "/profile/tasks/my-tasks",
+                element: <MyTasks />,
+              },
+              {
+                path: "/profile/tasks/create-task",
+                element: <NewProject />,
+              },
+              {
+                path: "/profile/tasks/assign-task",
+                element: <AssignTask />,
+              },
+            ],
           },
           {
             path: "/profile/inbox",

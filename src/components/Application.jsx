@@ -7,7 +7,7 @@ import Profile from "./pages/Profile/Profile";
 const Application = () => {
   const [isLogin /* setIsLogin */] = useState(false);
   return (
-    <div className="max-container">
+    <div className="container mx-auto">
       {!isLogin ? (
         <>
           <Header />

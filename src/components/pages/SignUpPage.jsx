@@ -4,14 +4,21 @@ import InputField from "../resuables/InputField";
 import Button from "../resuables/Button";
 import GoogleIcon from "../../../public/assets/icons/google_icon.png";
 import { useNavigate } from "react-router-dom";
+import PasswordInputField from "../resuables/PasswordInputField";
 const SignUpPage = () => {
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
+
+  const Navigate = useNavigate();
+
+  const handleLogin = () => {
+    Navigate("/login");
+  };
   const home = () => {
     navigate("/");
   };
   return (
-    <div className="max-container  section h-auto w-full flex flex-col items-center justify-center relative">
+    <div className="max-container  section h-auto w-full flex flex-col items-center justify-center relative pb-10">
       <div className="max-w-[500px] mt-[160px] flex flex-col items-center ">
         <div
           className="absolute top-[60px] right-0 cursor-pointer"
@@ -28,34 +35,39 @@ const SignUpPage = () => {
           </h3>
         </div>
         <form>
-          <InputField label="Full name" />
-          <InputField label="Email Address" />
-          <InputField label="Create password" />
+          <InputField label="Full name" width="499px" />
+          <InputField label="Email Address" width="499px" />
+          <PasswordInputField label="Create password" width="499px" />
         </form>
         <Button
-          width="full"
-          bg="primary"
+          width="100%"
+          bg="var(--primary)"
           text="Next"
           color="white"
           fontFamily="urbanist"
-          hoverBg="primaryShade2"
+          hoverBg="var(--primaryShade2)"
         />
         <Button
           img={true}
-          width={"full"}
+          width={"100%"}
           bg={"transparent"}
           text="Sign Up with Google"
-          color={"darkColors-grey"}
+          color={"var(--darkColors-grey)"}
           imgSrc={GoogleIcon}
           imgAlt={"google-icon"}
           fontFamily={"urbanist"}
           border={"border"}
-          borderColor="primary"
-          px={"[25px]"}
-          py={"[17px]"}
+          borderColor="var(--primary)"
+          onClick={""}
         />
-        <p className="bigBodyTextM text-darkColors-grey mt-[54px]">
-          Already have an account? <span onClick={""}>Login</span>
+        <p className="bigBodyTextM text-darkColors-grey mt-5">
+          Already have an account?{" "}
+          <span
+            className="hover:text-primaryShade2 text-primary cursor-pointer"
+            onClick={handleLogin}
+          >
+            Login
+          </span>
         </p>
       </div>
     </div>

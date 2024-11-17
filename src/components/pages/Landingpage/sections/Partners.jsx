@@ -2,7 +2,7 @@ import { partners } from "../../../../../public/constants/partners";
 
 const Partners = () => {
   return (
-    <div className="max-container section">
+    <div className="section">
       <h2 className="heading2 text-darkColors-grey text-center mb-9">
         Trusted by teams at
       </h2>

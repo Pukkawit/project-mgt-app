@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 import plugin from "tailwindcss/plugin";
+import tailwindScrollbar from "tailwind-scrollbar";
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -114,7 +115,7 @@ export default {
     },
   },
   plugins: [
-    require("tailwind-scrollbar"),
+    tailwindScrollbar,
     plugin(function ({ addComponents, theme }) {
       addComponents({
         ".heading1": {
