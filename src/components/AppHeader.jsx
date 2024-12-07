@@ -16,7 +16,7 @@ const AppHeader = () => {
         className="text-2xl font-bold font-unlock text-primary cursor-pointer"
         onClick={handleHomeNavigate}
       >
-        Taskly
+        ProductHive
       </h1>
 
       <div className="flex gap-x-3">

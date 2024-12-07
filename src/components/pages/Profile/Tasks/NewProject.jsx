@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "../../../resuables/Button";
 import InputField from "../../../resuables/InputField";
+import Label from "../../../resuables/Label";
+import CustomSelect from "../../../resuables/CustomSelect";
 
 const NewProject = () => {
   const [newProjectData, setNewProjectData] = useState({
@@ -73,6 +75,11 @@ const NewProject = () => {
             className="smallBodyTextM inputField h-24"
           />
         </div>
+        <Label
+          htmlFor="project-role"
+          label="Project Role"
+          component={<CustomSelect widthInputField={"300px"} />}
+        />
       </form>
       <div className="flex justify-end gap-2 mt-4">
         <Button

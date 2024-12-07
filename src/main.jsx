@@ -9,17 +9,10 @@ import "./index.css";
 import App from "./App";
 import Dashboard from "./components/pages/Profile/Dashboard";
 import Inbox from "./components/pages/Profile/Inbox/Inbox";
-import MyTasks from "./components/pages/Profile/Tasks/MyTasks";
 import Analyse from "./components/pages/Profile/Analyse/Analyse";
 import Settings from "./components/pages/Profile/Settings/Settings";
 import Members from "./components/pages/Profile/Members/Members";
 import Overview from "./components/pages/Profile/Dashboard/pages/Overview";
-import Board from "./components/pages/Profile/Dashboard/pages/Board";
-import List from "./components/pages/Profile/Dashboard/pages/List";
-import Timeline from "./components/pages/Profile/Dashboard/pages/Timeline";
-import Calender from "./components/pages/Profile/Dashboard/pages/Calender";
-import Workflow from "./components/pages/Profile/Dashboard/pages/Workflow";
-import Files from "./components/pages/Profile/Dashboard/pages/Files";
 import SignUpPage from "./components/pages/SignUpPage";
 import LoginPage from "./components/pages/LoginPage";
 import Application from "./components/Application";
@@ -32,7 +25,8 @@ import Profile from "./components/pages/Profile/Profile";
 import NewProject from "./components/pages/Profile/Tasks/NewProject";
 import Tasks from "./components/pages/Profile/Tasks/Tasks";
 import AssignTask from "./components/pages/Profile/Tasks/AssignTask";
-import TaskProgressChart from "./components/pages/Profile/Tasks/TaskProgressChart";
+import TrackTask from "./components/pages/Profile/Tasks/TrackTask";
+import TaskMonitor from "./components/pages/Profile/Tasks/TaskMonitor";
 
 const router = createBrowserRouter([
   {
@@ -49,7 +43,6 @@ const router = createBrowserRouter([
         element: <Profile />,
 
         children: [
-          // Redirect from /profile to /profile/dashboard
           {
             index: true,
             element: <Navigate to="/profile/dashboard" replace />,
@@ -67,30 +60,6 @@ const router = createBrowserRouter([
                 path: "/profile/dashboard/overview",
                 element: <Overview />,
               },
-              {
-                path: "/profile/dashboard/board",
-                element: <Board />,
-              },
-              {
-                path: "/profile/dashboard/list",
-                element: <List />,
-              },
-              {
-                path: "/profile/dashboard/timeline",
-                element: <Timeline />,
-              },
-              {
-                path: "/profile/dashboard/calender",
-                element: <Calender />,
-              },
-              {
-                path: "/profile/dashboard/workflow",
-                element: <Workflow />,
-              },
-              {
-                path: "/profile/dashboard/files",
-                element: <Files />,
-              },
             ],
           },
           {
@@ -99,23 +68,23 @@ const router = createBrowserRouter([
             children: [
               {
                 index: true,
-                element: <Navigate to="/profile/tasks/task-progress" replace />,
+                element: <Navigate to="/profile/tasks/new-project" replace />,
               },
               {
-                path: "/profile/tasks/task-progress",
-                element: <TaskProgressChart />,
-              },
-              {
-                path: "/profile/tasks/my-tasks",
-                element: <MyTasks />,
-              },
-              {
-                path: "/profile/tasks/create-task",
+                path: "/profile/tasks/new-project",
                 element: <NewProject />,
               },
               {
                 path: "/profile/tasks/assign-task",
                 element: <AssignTask />,
+              },
+              {
+                path: "/profile/tasks/track-task",
+                element: <TrackTask />,
+              },
+              {
+                path: "/profile/tasks/monitor-task",
+                element: <TaskMonitor />,
               },
             ],
           },

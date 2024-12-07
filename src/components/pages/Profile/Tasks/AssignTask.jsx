@@ -27,36 +27,44 @@ const AssignTask = () => {
       <form>
         <div className="flex w-full justify-between">
           <InputField
+            id="task-name"
             type="text"
             width="350px"
-            label="Task Title"
+            label="task-name"
             value={newTaskData.taskTitle}
             onChange={handleChange}
-            name="taskTitle"
+            name="task-name"
+            htmlFor="task-name"
           />
           <InputField
+            id="task-type"
             type="text"
-            label="Task Type"
+            label="task-type"
             width="350px"
             value={newTaskData.taskType}
             onChange={handleChange}
-            name="taskType"
+            name="task-type"
+            htmlFor="task-type"
           />
           <InputField
+            id="task-start-date"
             type="date"
-            label="Start Date"
+            label="task-start-date"
             width="175px"
             value={newTaskData.startDate}
             onChange={handleChange}
-            name="startDate"
+            name="task-start-date"
+            htmlFor="task-start-date"
           />
           <InputField
+            id="task-end-date"
             type="date"
-            label="End Date"
+            label="task-end-date"
             width="175px"
             value={newTaskData.endDate}
             onChange={handleChange}
-            name="endDate"
+            name="task-end-date"
+            htmlFor="task-end-date"
           />
         </div>
         <div className="flex flex-col gap-y-[10px] mt-4">
@@ -66,11 +74,11 @@ const AssignTask = () => {
             rows="10"
             value={newTaskData.taskDescription}
             onChange={handleChange}
-            name="taskDescription"
+            name="task-description"
             className="smallBodyTextM inputField h-24"
           />
         </div>
-        <div className="flex items-center gap-8 mt-4">
+        <div className="flex items-center gap-11 mt-4">
           <div className="flex flex-col gap-y-[10px] ">
             <Label htmlFor="assign-to" label="Assign to" />
             <SelectInputField
@@ -104,27 +112,9 @@ const AssignTask = () => {
               />
             }
           />
-          <Label
-            htmlFor="assign-to"
-            label="Assign to"
-            component={
-              <SelectInputField
-                id="task-assigning"
-                value={newTaskData.taskType}
-                onChange={handleChange}
-                width={"150px"}
-                options={[
-                  { value: "", label: "Select" },
-                  { value: "High", label: "High" },
-                  { value: "Low", label: "Low" },
-                ]}
-                name="task-assigning"
-              />
-            }
-          />
         </div>
       </form>
-      <div className="flex justify-end gap-2 mt-4">
+      <div className="flex justify-end gap-2 mt-11">
         <Button
           type="submit"
           color="white"
@@ -140,6 +130,8 @@ const AssignTask = () => {
           bg="var(--primaryShade5)"
           text="Cancel"
           fontFamily="urbanist"
+          hoverBg="var(--primary)"
+          hoverText="var(--primaryShade5)"
           onClick={() => {
             window.history.back();
           }}

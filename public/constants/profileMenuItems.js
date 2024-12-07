@@ -9,17 +9,7 @@ export const sideBarMenuitems = [
     label: "Inbox",
     path: "/profile/inbox",
     icon: "#inbox",
-    inbox: [
-      "message1",
-      "message2",
-      "message3",
-      "message4",
-      "message1",
-      "message2",
-      "message3",
-      "message4",
-      "message1",
-    ],
+    inbox: [],
   },
   { label: "Analyse", path: "/profile/analyse", icon: "#analyse" },
   { label: "Members", path: "/profile/members", icon: "#members" },
@@ -28,16 +18,16 @@ export const sideBarMenuitems = [
 
 export const dashboardMenuItems = [
   { label: "Overview", path: "/profile/dashboard/overview" },
-  { label: "Board", path: "/profile/dashboard/board" },
-  { label: "List", path: "/profile/dashboard/list" },
-  { label: "Timeline", path: "/profile/dashboard/timeline" },
-  { label: "Calender", path: "/profile/dashboard/calender" },
-  { label: "Workflow", path: "/profile/dashboard/workflow" },
-  { label: "Files", path: "/profile/dashboard/files" },
 ];
 export const myTasksMenuItems = [
-  { label: "Overview", path: "/profile/tasks/task-progress" },
-  { label: "My Tasks", path: "/profile/tasks/my-tasks" },
-  { label: "Create New", path: "/profile/tasks/create-task" },
+  { label: "Project", path: "/profile/tasks/new-project" },
   { label: "Assign Task", path: "/profile/tasks/assign-task" },
+  { label: "Track Task", path: "/profile/tasks/track-task" },
+  { label: "Monitor Task", path: "/profile/tasks/monitor-task" },
+];
+export const membersMenuItems = [
+  { label: "Project", path: "/profile/tasks/new-project" },
+  { label: "Assign Task", path: "/profile/tasks/assign-task" },
+  { label: "Track Task", path: "/profile/tasks/track-task" },
+  { label: "Monitor Task", path: "/profile/tasks/monitor-task" },
 ];

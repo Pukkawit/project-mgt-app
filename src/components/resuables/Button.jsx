@@ -15,11 +15,14 @@ const Button = ({
   imgAlt,
   img,
   type,
+  marginButtom = 6,
+  paddingLeftRight = 26,
+  paddingTopBottom = 18,
 }) => {
   return (
     <button
       type={type}
-      className={`mb-6 px-[26px] py-[18px] font-medium rounded-md transition-colors ease-in-out delay-150 ${
+      className={`mb-${marginButtom} px-[${paddingLeftRight}px] py-[${paddingTopBottom}px] font-medium rounded-md transition-colors ease-in-out delay-150 ${
         border ? `border ${border}` : ""
       }`}
       onClick={onClick}
@@ -62,6 +65,9 @@ Button.propTypes = {
   img: PropTypes.bool,
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
+  marginButtom: PropTypes.string,
+  paddingLeftRight: PropTypes.string,
+  paddingTopBottom: PropTypes.string,
   type: PropTypes.string.isRequired,
 };
 
