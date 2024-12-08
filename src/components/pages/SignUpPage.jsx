@@ -22,7 +22,7 @@ const SignUpPage = () => {
     <div className="max-container  section h-auto w-full flex flex-col items-center justify-center relative pb-10">
       <div className="max-w-[500px] mt-[160px] flex flex-col items-center ">
         <div
-          className="absolute top-[60px] right-0 cursor-pointer hover:text-red-950 text-[#5C5858]"
+          className="absolute top-[60px] right-0 cursor-pointer transition-colors ease-in-out duration-300 hover:text-red-600 text-[#5C5858]"
           onClick={home}
         >
           <svg className="w-6 h-6">
