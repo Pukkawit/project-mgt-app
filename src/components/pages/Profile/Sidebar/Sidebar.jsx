@@ -1,10 +1,14 @@
 import Nav from "./Nav";
-import SiteLogo from "../../../../../public/assets/icons/dashboard/SiteLogo";
-import addIcon from "../../../../../public/assets/icons/dashboard/add-icon.svg";
-import dashboardUser from "../../../../../public/assets/images/Avatars/dashboard-user.png";
-import dotsMore from "../../../../../public/assets/icons/dashboard/dots-more.png";
+/* import SiteLogo from "../../../../../public/assets/icons/dashboard/SiteLogo"; */
+/* import addIcon from "../../../../../public/assets/icons/dashboard/add-icon.svg"; */
+/* import dashboardUser from "../../../../../public/assets/images/Avatars/dashboard-user.png";
+import dotsMore from "../../../../../public/assets/icons/dashboard/dots-more.png"; */
 import { useNavigate } from "react-router-dom";
 
+const SiteLogo = "/assets/icons/dashboard/site-logo.svg";
+const addIcon = "/assets/icons/dashboard/add-icon.svg";
+const dashboardUser = "/assets/images/Avatars/dashboard-user.png";
+const dotsMore = "/assets/icons/dashboard/dots-more.png";
 const Sidebar = () => {
   const Navigate = useNavigate();
 
@@ -14,8 +18,10 @@ const Sidebar = () => {
   return (
     <aside className="flex  flex-col top-0 left-0 absolute  h-screen min-h-screen w-[291px] border rounded-[10px] bg-white border-dashboardLightGray overflow-y-auto z-10">
       <header className="h-20 flex items-center p-4">
-        <div className="logo">
-          <SiteLogo stroke="#0177FB" fill="#0177FB" />
+        <div className="logo text-primary hover:text-[#1883FB] cursor-pointer transition-colors duration-200 ease-in-out">
+          <svg className="w-52 h-8">
+            <use href={`${SiteLogo}#site-logo`}></use>
+          </svg>
         </div>
       </header>
       <main className="grow relative font-inter px-1 py-4 flex flex-col justify-between">

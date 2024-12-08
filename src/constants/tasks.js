@@ -46,12 +46,12 @@ export const tasks = [
             filesUploads: [
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot2.png",
+                src: "/assets/images/tasks/screenshot2.png",
                 alt: "Uploaded files",
               },
             ],
@@ -89,17 +89,17 @@ export const tasks = [
             filesUploads: [
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
             ],
@@ -171,12 +171,12 @@ export const tasks = [
             filesUploads: [
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
             ],
@@ -326,48 +326,42 @@ export const tasks = [
             contributors: [
               {
                 name: "Mill Cosby",
-                avatar:
-                  "../../../../public/assets/images/Avatars/UI Design/avatar1.png",
+                avatar: "/assets/images/Avatars/UI Design/avatar1.png",
                 role: "Developer",
                 alt: "contributor1",
                 message: ["This task is due tomorrow."],
               },
               {
                 name: "Jane Doe",
-                avatar:
-                  "../../../../public/assets/images/Avatars/UI Design/avatar2.png",
+                avatar: "/assets/images/Avatars/UI Design/avatar2.png",
                 role: "Designer",
                 alt: "contributor2",
                 message: ["Update required.", "Do not fail to see this"],
               },
               {
                 name: "Jane Doe",
-                avatar:
-                  "../../../../public/assets/images/Avatars/UI Design/avatar3.png",
+                avatar: "/assets/images/Avatars/UI Design/avatar3.png",
                 role: "Designer",
                 alt: "contributor2",
                 message: ["Update required.", "Do not fail to see this"],
               },
               {
                 name: "Jane Doe",
-                avatar:
-                  "../../../../public/assets/images/Avatars/UI Design/avatar3.png",
+                avatar: "/assets/images/Avatars/UI Design/avatar3.png",
                 role: "Designer",
                 alt: "contributor2",
                 message: ["Update required.", "Do not fail to see this"],
               },
               {
                 name: "Jane Doe",
-                avatar:
-                  "../../../../public/assets/images/Avatars/UI Design/avatar3.png",
+                avatar: "/assets/images/Avatars/UI Design/avatar3.png",
                 role: "Designer",
                 alt: "contributor2",
                 message: ["Update required.", "Do not fail to see this"],
               },
               {
                 name: "Jane Doe",
-                avatar:
-                  "../../../../public/assets/images/Avatars/UI Design/avatar3.png",
+                avatar: "/assets/images/Avatars/UI Design/avatar3.png",
                 role: "Designer",
                 alt: "contributor2",
                 message: ["Do not fail to see this"],
@@ -392,17 +386,17 @@ export const tasks = [
             filesUploads: [
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
               {
                 title: "Designing for greatness",
-                src: "../../../../public/assets/images/tasks/screenshot1.png",
+                src: "/assets/images/tasks/screenshot1.png",
                 alt: "Uploaded files",
               },
             ],

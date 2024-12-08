@@ -1,10 +1,13 @@
 import { useState } from "react";
-import CloseIcon from "../../../public/assets/icons/CloseIcon";
+/* import CloseIcon from "../../../public/assets/icons/CloseIcon"; */
 import InputField from "../resuables/InputField";
 import Button from "../resuables/Button";
-import GoogleIcon from "../../../public/assets/icons/google_icon.png";
+/* import GoogleIcon from "../../../public/assets/icons/google_icon.png"; */
 import { useNavigate } from "react-router-dom";
 import PasswordInputField from "../resuables/PasswordInputField";
+
+const GoogleIcon = "/assets/icons/google_icon.png";
+const CloseIcon = "/assets/icons/CloseIcon.jsx";
 const SignUpPage = () => {
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();

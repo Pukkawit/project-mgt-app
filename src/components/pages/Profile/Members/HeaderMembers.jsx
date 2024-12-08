@@ -1,6 +1,7 @@
-import profileMember from "../../../../../public/assets/icons/dashboard/track-tasks-icons.svg";
+/* import profileMember from "../../../../../public/assets/icons/dashboard/track-tasks-icons.svg"; */
 import Button from "../../../resuables/Button";
 
+const profileMember = "/assets/icons/dashboard/track-tasks-icons.svg";
 const HeaderMembers = () => {
   return (
     <div className="flex justify-between w-full items-center h-[100px] p-7">

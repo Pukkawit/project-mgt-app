@@ -22,7 +22,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={`mb-${marginButtom} px-[${paddingLeftRight}px] py-[${paddingTopBottom}px] font-medium rounded-md transition-colors ease-in-out delay-150 ${
+      className={`mb-${marginButtom}  font-medium rounded-md transition-colors ease-in-out delay-150 ${
         border ? `border ${border}` : ""
       }`}
       onClick={onClick}
@@ -32,6 +32,8 @@ const Button = ({
         width: width,
         borderColor: borderColor,
         fontFamily: fontFamily,
+        paddingInline: paddingLeftRight,
+        paddingBlock: paddingTopBottom,
       }}
       onMouseEnter={(e) => {
         if (hoverBg) e.target.style.backgroundColor = hoverBg;
@@ -65,10 +67,10 @@ Button.propTypes = {
   img: PropTypes.bool,
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
-  marginButtom: PropTypes.string,
-  paddingLeftRight: PropTypes.string,
-  paddingTopBottom: PropTypes.string,
-  type: PropTypes.string.isRequired,
+  marginButtom: PropTypes.number,
+  paddingLeftRight: PropTypes.number,
+  paddingTopBottom: PropTypes.number,
+  type: PropTypes.string,
 };
 
 export default Button;

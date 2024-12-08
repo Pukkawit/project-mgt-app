@@ -1,8 +1,10 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import closeEye from "../../../public/assets/icons/close-eye.png";
-import openEye from "../../../public/assets/icons/open-eye.png";
+/* import closeEye from "../../../public/assets/icons/close-eye.png"; */
+/* import openEye from "../../../public/assets/icons/open-eye.png"; */
 
+const closeEye = "/assets/icons/close-eye.png";
+const openEye = "/assets/icons/open-eye.png";
 const PasswordInputField = ({ label, name, id, htmlFor, width }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [value, setValue] = useState("");

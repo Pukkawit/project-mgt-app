@@ -1,7 +1,8 @@
-import dotsMore from "../../../../public/assets/icons/dashboard/dotsMore.svg";
+/* import dotsMore from "../../../../public/assets/icons/dashboard/dotsMore.svg"; */
 import TasksCard from "./TasksCard";
 import PropTypes from "prop-types";
 
+const dotsMore = "/assets/icons/dashboard/dotsMore.svg";
 const TasksLists = ({ title, borderColor, tasks }) => {
   return (
     <div className="w-64 flex flex-col ">

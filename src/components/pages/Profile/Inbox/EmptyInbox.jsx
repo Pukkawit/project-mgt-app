@@ -1,5 +1,6 @@
-import inboxBell from "../../../../../public/assets/icons/dashboard/inbox-bell-icon.svg";
+/* import inboxBell from "../../../../../public/assets/icons/dashboard/inbox-bell-icon.svg"; */
 
+const inboxBell = "/assets/icons/dashboard/inbox-bell-icon.svg";
 const EmptyInbox = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-full w-full">

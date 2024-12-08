@@ -1,8 +1,9 @@
 /* import { useState } from "react"; */
-import taskIcons from "../../../../public/assets/icons/dashboard/tasksIcons.svg";
+/* import taskIcons from "../../../../public/assets/icons/dashboard/tasksIcons.svg"; */
 import { textsColors } from "../../../constants/textDynamicColors";
 import PropTypes, { object } from "prop-types";
 
+const taskIcons = "/assets/icons/dashboard/tasksIcons.svg";
 const TasksCard = ({ tasks }) => {
   /* const [isGrabbing, setIsGrabbing] = useState(false); */
 

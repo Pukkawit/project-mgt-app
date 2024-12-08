@@ -32,7 +32,7 @@ const MyTasks = () => {
           type="submit"
           color={"#ffffff"}
           img={true}
-          imgSrc={"../../../../../public/assets/icons/Tasks/tasks-icons.svg"}
+          imgSrc={"/assets/icons/Tasks/tasks-icons.svg"}
           hoverBg={"var(--primaryShade2)"}
           onClick={() => Navigate("/profile/tasks/create-task")}
         />

@@ -19,6 +19,7 @@ import Application from "./components/Application";
 import Onboarding1 from "./components/pages/Onboarding1";
 import Onboarding2 from "./components/pages/Onboarding2";
 /* import OTPPage from "./components/pages/OTPpage"; */
+
 import Onboarding3 from "./components/pages/Onboarding3";
 import QuickVideoPage from "./components/pages/QuickVideoPage";
 import Profile from "./components/pages/Profile/Profile";

@@ -1,10 +1,10 @@
 import EmptyInbox from "./EmptyInbox";
-import { sideBarMenuitems } from "../../../../constants/profileMenuItems";
+import { sideBarMenuItems } from "../../../../constants/profileMenuItems";
 
 const Inbox = () => {
   return (
     <div className="h-full">
-      {sideBarMenuitems.map(
+      {sideBarMenuItems.map(
         (item, index) =>
           item.inbox &&
           item.inbox < 1 && (

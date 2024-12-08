@@ -1,5 +1,6 @@
-import settingsUserPhoto from "../../../../../public/assets/images/Avatars/dashboard-user.png";
+/* import settingsUserPhoto from "../../../../../public/assets/images/Avatars/dashboard-user.png"; */
 
+const settingsUserPhoto = "/assets/images/Avatars/dashboard-user.png";
 const ProfileAvatar = () => {
   return (
     <div className="flex flex-col items-center gap-2">

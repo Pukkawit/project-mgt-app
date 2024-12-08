@@ -21,14 +21,16 @@ const AppHeader = () => {
 
       <div className="flex gap-x-3">
         <Button
+          type="button"
           text="Contact Sales"
           color={"var(--darkColors-grey)"}
           bg={"var(--primaryShade5)"}
           border={"border"}
           borderColor={"primaryShade5"}
         />
-        <Button color={"var(--darkColors-grey)"} text="Login" />
+        <Button type="button" color={"var(--darkColors-grey)"} text="Login" />
         <Button
+          type="button"
           text="Sign Up"
           color={"white"}
           bg={"var(--primary)"}

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import SiteLogo from "../../../../public/assets/icons/dashboard/SiteLogo";
+/* import { ReactComponent as SiteLogo } from "/assets/icons/dashboard/site-logo.svg"; */
 import ProfileMenu from "../../resuables/Profile Menu/ProfileMenu";
 import {
   dashboardMenuItems,
@@ -9,6 +9,8 @@ import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HeaderMembers from "./Members/HeaderMembers";
 import SettingsHeader from "./Settings/SettingsHeader";
+
+const SiteLogo = "/assets/icons/dashboard/site-logo.svg";
 
 const ProfileHeader = (/* { isSidebarOpen } */) => {
   const [menuItems, setMenuItems] = useState([]);
@@ -50,7 +52,9 @@ const ProfileHeader = (/* { isSidebarOpen } */) => {
         // Render default profile menu and logo for non-header pages
         <>
           <div className="flex items-center justify-center h-16 w-[291px] border-0 border-b-4 border-r-2 border-darkColors-lightestGrey">
-            <SiteLogo stroke="#0177FB" fill="#0177FB" />
+            <svg className="">
+              <use href={`${SiteLogo}#site-logo`}></use>
+            </svg>
           </div>
           <ProfileMenu menuItems={menuItems} />
         </>
@@ -58,7 +62,7 @@ const ProfileHeader = (/* { isSidebarOpen } */) => {
         // Render header-specific content
         <div className="flex items-center min-w-full w-full">
           <div className="flex items-center min-w-[291px] bg-slate-200">
-            <SiteLogo stroke="#0177FB" fill="#0177FB" />
+            {/*     <SiteLogo stroke="#0177FB" fill="#0177FB" /> */}
           </div>
           {renderHeaderContent()}
         </div>

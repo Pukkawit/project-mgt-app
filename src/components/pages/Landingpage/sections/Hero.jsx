@@ -1,7 +1,8 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "../../../resuables/Button";
-import HeroImage from "../../../../../public/assets/images/hero-img.jpg";
+/* import HeroImage from "../../../../../public/assets/images/hero-img.jpg"; */
 
+const HeroImage = "/assets/images/hero-img.jpg";
 const Hero = () => {
   return (
     <div className="h-[623px] relative">
@@ -20,6 +21,7 @@ const Hero = () => {
           fosters teamwork and ensures project goals are met..
         </p>
         <Button
+          type="button"
           text="Get Started"
           bg="var(--primary)"
           hoverBg="var(--primaryShade2)"

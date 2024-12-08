@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { sideBarMenuitems } from "../../../../constants/profileMenuItems";
-import addIcon from "../../../../../public/assets/icons/dashboard/sidebarIcons.svg";
+import { sideBarMenuItems } from "../../../../constants/profileMenuItems";
+/* import addIcon from "../../../../../public/assets/icons/dashboard/sidebarIcons.svg"; */
 
+const addIcon = "/assets/icons/dashboard/sidebarIcons.svg";
 const Nav = () => {
   return (
     <nav className="flex flex-col">
-      {sideBarMenuitems.map((item, index) => (
+      {sideBarMenuItems.map((item, index) => (
         <NavLink key={index} to={item.path} className="cursor-pointer">
           {({ isActive }) => (
             <div

@@ -34,10 +34,10 @@ const InputField = ({
 // props validation
 InputField.propTypes = {
   type: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   width: PropTypes.string.isRequired,
-  htmlFor: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  htmlFor: PropTypes.string,
+  name: PropTypes.string,
   id: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,

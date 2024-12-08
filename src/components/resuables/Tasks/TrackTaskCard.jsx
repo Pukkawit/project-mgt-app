@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import trackTaskIcons from "../../../../public/assets/icons/dashboard/track-tasks-icons.svg";
+/* import trackTaskIcons from "../../../../public/assets/icons/dashboard/track-tasks-icons.svg"; */
 
+const trackTaskIcons = "/assets/icons/dashboard/track-tasks-icons.svg";
 function TrackTaskCard({ title, bgColor, textColor }) {
   return (
     <div className=" p-4 shadow-sm space-y-4">

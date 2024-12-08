@@ -30,6 +30,7 @@ const NewProject = () => {
             type="text"
             width="350px"
             label="Project Title"
+            htmlFor="projectTitle"
             value={newProjectData.projectTitle}
             onChange={handleChange}
             name="projectTitle"
@@ -40,6 +41,7 @@ const NewProject = () => {
             width="350px"
             value={newProjectData.projectType}
             onChange={handleChange}
+            htmlFor="projectType"
             name="projectType"
           />
           <InputField
@@ -49,6 +51,7 @@ const NewProject = () => {
             value={newProjectData.startDate}
             onChange={handleChange}
             name="startDate"
+            htmlFor="startDate"
           />
           <InputField
             type="date"
@@ -57,6 +60,7 @@ const NewProject = () => {
             value={newProjectData.endDate}
             onChange={handleChange}
             name="endDate"
+            htmlFor="endDate"
           />
         </div>
         <div className="flex flex-col gap-y-[10px] mt-4">
