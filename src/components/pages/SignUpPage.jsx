@@ -1,4 +1,3 @@
-import { useState } from "react";
 /* import CloseIcon from "../../../public/assets/icons/CloseIcon"; */
 import InputField from "../resuables/InputField";
 import Button from "../resuables/Button";
@@ -7,9 +6,8 @@ import { useNavigate } from "react-router-dom";
 import PasswordInputField from "../resuables/PasswordInputField";
 
 const GoogleIcon = "/assets/icons/google_icon.png";
-const CloseIcon = "/assets/icons/CloseIcon.jsx";
+const CloseIcon = "/assets/icons/close-icon.svg";
 const SignUpPage = () => {
-  const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
 
   const Navigate = useNavigate();
@@ -24,12 +22,12 @@ const SignUpPage = () => {
     <div className="max-container  section h-auto w-full flex flex-col items-center justify-center relative pb-10">
       <div className="max-w-[500px] mt-[160px] flex flex-col items-center ">
         <div
-          className="absolute top-[60px] right-0 cursor-pointer"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          className="absolute top-[60px] right-0 cursor-pointer hover:text-red-950 text-[#5C5858]"
           onClick={home}
         >
-          <CloseIcon isHovered={isHovered} />
+          <svg className="w-6 h-6">
+            <use href={`${CloseIcon}#close-icon`}></use>
+          </svg>
         </div>
         <div className="mb-[54px]">
           <h1 className="heading1 text-darkColors-grey text-center">Sign Up</h1>
