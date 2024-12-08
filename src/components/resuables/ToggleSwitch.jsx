@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 
-const ToggleSwitch = () => {
+const ToggleSwitch = ({ title, description }) => {
   const [isToggled, setIsToggled] = useState(false);
 
   const handleToggle = () => {
@@ -11,27 +12,30 @@ const ToggleSwitch = () => {
     <div className="flex items-center space-x-4">
       {/* Toggle Button */}
       <div
-        className={`relative w-10 h-6 rounded-full cursor-pointer transition-colors duration-300 ${
-          isToggled ? "bg-blue-500" : "bg-gray-300"
+        className={`relative w-[53px] h-[30px] rounded-full cursor-pointer transition-colors duration-300 ${
+          isToggled ? "bg-primary" : "bg-darkColors-grey"
         }`}
         onClick={handleToggle}
       >
         <div
-          className={`absolute top-1 w-4 h-4 rounded-full bg-white shadow-md transition-transform duration-300 ${
-            isToggled ? "translate-x-4" : "translate-x-0"
+          className={`absolute top-0 w-8 h-8 rounded-full bg-white shadow-xl transition-transform duration-300 ${
+            isToggled ? "translate-x-6" : "translate-x-0"
           }`}
         ></div>
       </div>
 
       {/* Text Description */}
-      <div>
-        <p className="font-medium text-gray-900">Text Message (SMS)</p>
-        <p className="text-sm text-gray-600">
-          Receive a one-time passcode via SMS each time you log in.
-        </p>
+      <div className="flex flex-col gap-2">
+        <p className="bigBodyTextM text-darkColors-grey">{title}</p>
+        <p className="bigBodyTextM text-darkColors-lightGrey">{description}</p>
       </div>
     </div>
   );
+};
+
+ToggleSwitch.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default ToggleSwitch;

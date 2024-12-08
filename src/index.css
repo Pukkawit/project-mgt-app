@@ -22,6 +22,10 @@
   --darkColors-lightGrey: #848181;
   --darkColors-lighterGrey: #cecdcd;
   --darkColors-lightestGrey: #f5f5f5;
+
+  --statusColors-success: #26b735;
+  --statusColors-warning: #f3de27;
+  --statusColors-error: #e81010;
 }
 
 * {
@@ -39,6 +43,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: auto;
+  font-size: 22px;
   /* position: relative; */
 }
 

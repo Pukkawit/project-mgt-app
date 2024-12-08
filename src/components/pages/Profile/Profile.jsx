@@ -14,7 +14,7 @@ const Profile = ({ isSidebarOpen }) => {
           isSidebarOpen ? "ml-[70px]" : "ml-[291px]"
         } transition-all duration-300 px-8 pt-10 max-w-[1200px]  h-full`}
       >
-        <div className="scrollbar-thin h-full w-full overflow-y-auto ">
+        <div className="scrollbar-thin h-full w-full overflow-y-auto overflow-x-auto ">
           <Outlet />
         </div>
       </main>
