@@ -18,7 +18,6 @@ import LoginPage from "./components/pages/LoginPage";
 import Application from "./components/Application";
 import Onboarding1 from "./components/pages/Onboarding1";
 import Onboarding2 from "./components/pages/Onboarding2";
-/* import OTPPage from "./components/pages/OTPpage"; */
 
 import Onboarding3 from "./components/pages/Onboarding3";
 import QuickVideoPage from "./components/pages/QuickVideoPage";
@@ -28,6 +27,7 @@ import Tasks from "./components/pages/Profile/Tasks/Tasks";
 import AssignTask from "./components/pages/Profile/Tasks/AssignTask";
 import TrackTask from "./components/pages/Profile/Tasks/TrackTask";
 import TaskMonitor from "./components/pages/Profile/Tasks/TaskMonitor";
+import OtpPage from "./components/pages/OTPpage";
 
 const router = createBrowserRouter([
   {
@@ -127,10 +127,10 @@ const router = createBrowserRouter([
         path: "onboarding-3",
         element: <Onboarding3 />,
       },
-      /* {
+      {
         path: "otp",
-        element: <OTPPage />,
-      }, */
+        element: <OtpPage />,
+      },
       {
         path: "quick-video",
         element: <QuickVideoPage />,

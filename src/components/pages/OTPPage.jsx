@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Button from "../resuables/Button";
 
-const OTPPage = () => {
+const OtpPage = () => {
   const [otp, setOtp] = useState(["", "", "", "", "", ""]); // Array to manage OTP input
 
   // Handle OTP input
@@ -61,4 +61,4 @@ const OTPPage = () => {
   );
 };
 
-export default OTPPage;
+export default OtpPage;
