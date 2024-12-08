@@ -19,7 +19,7 @@ import Application from "./components/Application";
 import Onboarding1 from "./components/pages/Onboarding1";
 import Onboarding2 from "./components/pages/Onboarding2";
 import Onboarding3 from "./components/pages/Onboarding3";
-import OtpPage from "./components/pages/OtpPage";
+import VerficationOtpPage from "./components/pages/VerficationOtpPage";
 import QuickVideoPage from "./components/pages/QuickVideoPage";
 import Profile from "./components/pages/Profile/Profile";
 import NewProject from "./components/pages/Profile/Tasks/NewProject";
@@ -128,7 +128,7 @@ const router = createBrowserRouter([
       },
       {
         path: "otp",
-        element: <OtpPage />,
+        element: <VerficationOtpPage />,
       },
       {
         path: "quick-video",
