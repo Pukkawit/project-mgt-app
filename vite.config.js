@@ -5,4 +5,10 @@ import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
   plugins: [react(), svgr()],
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+    extensions: [".js", ".jsx", ".ts", ".tsx"], // Include relevant extensions
+  },
 });

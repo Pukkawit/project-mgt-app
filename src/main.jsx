@@ -18,8 +18,8 @@ import LoginPage from "./components/pages/LoginPage";
 import Application from "./components/Application";
 import Onboarding1 from "./components/pages/Onboarding1";
 import Onboarding2 from "./components/pages/Onboarding2";
-
 import Onboarding3 from "./components/pages/Onboarding3";
+import OtpPage from "./components/pages/OtpPage";
 import QuickVideoPage from "./components/pages/QuickVideoPage";
 import Profile from "./components/pages/Profile/Profile";
 import NewProject from "./components/pages/Profile/Tasks/NewProject";
@@ -27,7 +27,6 @@ import Tasks from "./components/pages/Profile/Tasks/Tasks";
 import AssignTask from "./components/pages/Profile/Tasks/AssignTask";
 import TrackTask from "./components/pages/Profile/Tasks/TrackTask";
 import TaskMonitor from "./components/pages/Profile/Tasks/TaskMonitor";
-import OtpPage from "./components/pages/OTPpage";
 
 const router = createBrowserRouter([
   {
