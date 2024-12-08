@@ -16,7 +16,7 @@ import Overview from "./components/pages/Profile/Dashboard/pages/Overview";
 import SignUpPage from "./components/pages/SignUpPage";
 import LoginPage from "./components/pages/LoginPage";
 import Application from "./components/Application";
-import OTPPage from "./components/pages/OTPpage";
+import OTPPage from "./components/pages/OTPpage.jsx";
 import Onboarding1 from "./components/pages/Onboarding1";
 import Onboarding2 from "./components/pages/Onboarding2";
 import Onboarding3 from "./components/pages/Onboarding3";

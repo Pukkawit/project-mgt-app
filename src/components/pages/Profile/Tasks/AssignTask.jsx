@@ -30,7 +30,7 @@ const AssignTask = () => {
             id="task-name"
             type="text"
             width="350px"
-            label="task-name"
+            label="Task Name"
             value={newTaskData.taskTitle}
             onChange={handleChange}
             name="task-name"
@@ -39,7 +39,7 @@ const AssignTask = () => {
           <InputField
             id="task-type"
             type="text"
-            label="task-type"
+            label="Task Type"
             width="350px"
             value={newTaskData.taskType}
             onChange={handleChange}
@@ -49,7 +49,7 @@ const AssignTask = () => {
           <InputField
             id="task-start-date"
             type="date"
-            label="task-start-date"
+            label="Task Start Date"
             width="175px"
             value={newTaskData.startDate}
             onChange={handleChange}
@@ -59,7 +59,7 @@ const AssignTask = () => {
           <InputField
             id="task-end-date"
             type="date"
-            label="task-end-date"
+            label="Task End Date"
             width="175px"
             value={newTaskData.endDate}
             onChange={handleChange}

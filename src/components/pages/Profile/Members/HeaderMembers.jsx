@@ -3,7 +3,7 @@ import Button from "../../../resuables/Button";
 
 const HeaderMembers = () => {
   return (
-    <div className="flex justify-between w-full items-center h-[100px] p-7 bg-slate-100">
+    <div className="flex justify-between w-full items-center h-[100px] p-7">
       <div className="flex gap-2 items-center">
         <svg className="w-6 h-6">
           <use href={`${profileMember}#profile`}></use>
