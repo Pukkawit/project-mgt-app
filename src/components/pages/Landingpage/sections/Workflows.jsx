@@ -1,4 +1,4 @@
-import { workflows } from "../../../../../public/constants/worflows";
+import { workflows } from "/src/constants/worflows";
 import WorkflowsCard from "../../../resuables/WorkflowsCard";
 
 const Workflows = () => {

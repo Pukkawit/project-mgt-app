@@ -1,5 +1,5 @@
 import EmptyInbox from "./EmptyInbox";
-import { sideBarMenuitems } from "../../../../../public/constants/profileMenuItems";
+import { sideBarMenuitems } from "../../../../constants/profileMenuItems";
 
 const Inbox = () => {
   return (

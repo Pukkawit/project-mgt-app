@@ -1,8 +1,12 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
-import googlePlay from "../../../../../public/assets/images/googleplay.png";
+/* import googlePlay from "../../../../../public/assets/images/googleplay.png";
 import appstore from "../../../../../public/assets/images/appstore.png";
-import featuredGuy from "../../../../../public/assets/images/benefit-smiling-guy.png";
+import featuredGuy from "../../../../../public/assets/images/benefit-smiling-guy.png"; */
+
+const googlePlay = "/assets/images/googleplay.png";
+const appstore = "/assets/images/appstore.png";
+const featuredGuy = "/assets/images/benefit-smiling-guy.png";
 
 const Benefit = () => {
   return (

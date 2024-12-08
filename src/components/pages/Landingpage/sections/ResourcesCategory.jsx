@@ -1,7 +1,9 @@
 import Card from "../../../resuables/Card";
-import { resources } from "../../../../../public/constants/resources";
+import { resources } from "/src/constants/resources";
 import { Link } from "react-router-dom";
-import RightArrow from "../../../../../public/assets/icons/right-arrow.png";
+/* import RightArrow from "../../../../../public/assets/icons/right-arrow.png"; */
+
+const RightArrow = "/assets/icons/right-arrow.png";
 
 const ResourcesCategory = () => {
   return (

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { sideBarMenuitems } from "../../../../../public/constants/profileMenuItems";
+import { sideBarMenuitems } from "../../../../constants/profileMenuItems";
 import addIcon from "../../../../../public/assets/icons/dashboard/sidebarIcons.svg";
 
 const Nav = () => {

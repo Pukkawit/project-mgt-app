@@ -45,93 +45,93 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Navigate to="/profile/dashboard" replace />,
+            element: <Navigate to="dashboard" replace />,
           },
           {
-            path: "/profile/dashboard",
+            path: "dashboard",
             element: <Dashboard />,
 
             children: [
               {
                 index: true,
-                element: <Navigate to="/profile/dashboard/overview" replace />,
+                element: <Navigate to="overview" replace />,
               },
               {
-                path: "/profile/dashboard/overview",
+                path: "overview",
                 element: <Overview />,
               },
             ],
           },
           {
-            path: "/profile/tasks",
+            path: "tasks",
             element: <Tasks />,
             children: [
               {
                 index: true,
-                element: <Navigate to="/profile/tasks/new-project" replace />,
+                element: <Navigate to="new-project" replace />,
               },
               {
-                path: "/profile/tasks/new-project",
+                path: "new-project",
                 element: <NewProject />,
               },
               {
-                path: "/profile/tasks/assign-task",
+                path: "assign-task",
                 element: <AssignTask />,
               },
               {
-                path: "/profile/tasks/track-task",
+                path: "track-task",
                 element: <TrackTask />,
               },
               {
-                path: "/profile/tasks/monitor-task",
+                path: "monitor-task",
                 element: <TaskMonitor />,
               },
             ],
           },
           {
-            path: "/profile/inbox",
+            path: "inbox",
             element: <Inbox />,
           },
           {
-            path: "/profile/analyse",
+            path: "analyse",
             element: <Analyse />,
           },
           {
-            path: "/profile/members",
+            path: "members",
             element: <Members />,
           },
           {
-            path: "/profile/settings",
+            path: "settings",
             element: <Settings />,
           },
         ],
       },
       {
-        path: "/signup",
+        path: "signup",
         element: <SignUpPage />,
       },
       {
-        path: "/login",
+        path: "login",
         element: <LoginPage />,
       },
       {
-        path: "/onboarding-1",
+        path: "onboarding-1",
         element: <Onboarding1 />,
       },
       {
-        path: "/onboarding-2",
+        path: "onboarding-2",
         element: <Onboarding2 />,
       },
       {
-        path: "/onboarding-3",
+        path: "onboarding-3",
         element: <Onboarding3 />,
       },
       {
-        path: "/otp",
+        path: "otp",
         element: <OTPPage />,
       },
       {
-        path: "/quick-video",
+        path: "quick-video",
         element: <QuickVideoPage />,
       },
       {

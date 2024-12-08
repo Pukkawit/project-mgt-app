@@ -1,4 +1,4 @@
-import { tasks } from "../../../../../public/constants/tasks";
+import { tasks } from "../../../../constants/tasks";
 import TasksLists from "../../../resuables/Tasks/TasksLists";
 import Button from "../../../resuables/Button";
 import { useNavigate } from "react-router-dom";

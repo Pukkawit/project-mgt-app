@@ -1,6 +1,6 @@
 /* import { useState } from "react"; */
 import taskIcons from "../../../../public/assets/icons/dashboard/tasksIcons.svg";
-import { textsColors } from "../../../../public/constants/textDynamicColors";
+import { textsColors } from "../../../constants/textDynamicColors";
 import PropTypes, { object } from "prop-types";
 
 const TasksCard = ({ tasks }) => {

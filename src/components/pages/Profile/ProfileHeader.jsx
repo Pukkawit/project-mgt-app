@@ -4,11 +4,10 @@ import ProfileMenu from "../../resuables/Profile Menu/ProfileMenu";
 import {
   dashboardMenuItems,
   myTasksMenuItems,
-} from "../../../../public/constants/profileMenuItems";
+} from "../../../constants/profileMenuItems";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import HeaderMembers from "./Members/HeaderMembers";
-import Inbox from "./Inbox/Inbox";
 import SettingsHeader from "./Settings/SettingsHeader";
 
 const ProfileHeader = (/* { isSidebarOpen } */) => {

@@ -1,5 +1,5 @@
 import Card from "../../../resuables/Card";
-import { features } from "../../../../../public/constants/features";
+import { features } from "/src/constants/features";
 
 const Features = () => {
   return (
